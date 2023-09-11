@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #faeee7;
+}
+.slide{
+    position: relative;
+    width: 600px;
+    height: 280px;
+    overflow: hidden;
+    /* margin-top: 200px; */
+    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slide li{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: #faeee7;
+    animation: loop 15s linear infinite;
+}
+.slide li:nth-child(1){
+    left: 0;
+}
+.slide li:nth-child(2){
+    left: 100%;
+}
+.slide li:nth-child(3){
+    left: 200%;
+}
+.slide li:nth-child(4){
+    left: 300%;
+}
+.slide li:nth-child(5){
+    left: 400%;
+}
+.slide li:nth-child(6){
+    left: 500%;
+}
+@keyframes loop {
+    0%{
+        transform: translate(0,0);
+    }
+    10%{
+        transform: translate(0,0);
+    }
+    20%{
+        transform: translate(-600px,0);
+    }
+    30%{
+        transform: translate(-600px,0);
+    }
+    40%{
+        transform: translate(-1200px,0);
+    }
+    50%{
+        transform: translate(-1200px,0);
+    }
+    60%{
+        transform: translate(-1800px,0);
+    }
+    70%{
+        transform: translate(-1800px,0);
+    }
+    80%{
+        transform: translate(-2400px,0);
+    }
+    85%{
+        transform: translate(-2400px,0);
+    }
+    90%{
+        transform: translate(-3000px,0);
+    }
+    95%{
+        transform: translate(-3000px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+.text-layout {
+    width: 500px;
+    height: 520px;
+    margin: 50px auto;
+}
+.text-layout h1{
+    color: #33272a;
+    background-color: #ffc6c7;
+    border-radius: 10px;
+    padding-left: 6px;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.text-layout h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 80px;
+    background-color: #ff8ba7;
+    border-radius: 10px;
+    padding-left: 6px;
+}
+.text-layout p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
